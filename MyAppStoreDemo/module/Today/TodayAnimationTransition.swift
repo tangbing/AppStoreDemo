@@ -58,7 +58,6 @@ extension TodayAnimationTransition : UIViewControllerAnimatedTransitioning {
         containerView.addSubview(toVC.view)
         
         
-        
         UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
             
             toVC.view.frame = UIScreen.main.bounds
@@ -76,9 +75,7 @@ extension TodayAnimationTransition : UIViewControllerAnimatedTransitioning {
     
     func animationForDismiss(using transitionContext: UIViewControllerContextTransitioning) {
         
-        
-        let containerView = transitionContext.containerView
-        
+                
         guard let fromVC = transitionContext.viewController(forKey: .from) as? CardDetailViewController else {return}
         guard let toVc = transitionContext.viewController(forKey: .to) as? UITabBarController else {return}
         
