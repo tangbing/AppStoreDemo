@@ -47,8 +47,9 @@ class TodayTableViewController: UITableViewController {
         }
     }
     
-    @objc func presentUserTableViewController() {
-        
+    @objc override func presentUserTableViewController() {
+        let nav = UserTableViewController.setupUserTalbeView()
+        self.present(nav, animated: true, completion: nil)
     }
 
     // MARK: - Table view data source

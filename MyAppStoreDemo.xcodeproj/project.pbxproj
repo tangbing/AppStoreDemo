@@ -26,6 +26,8 @@
 		33D599CD2514AACF004E5AFF /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D599CC2514AACF004E5AFF /* TodayTableViewCell.swift */; };
 		33D599CF2514ADA4004E5AFF /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D599CE2514ADA4004E5AFF /* CardDetailViewController.swift */; };
 		33D599D12514B684004E5AFF /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D599D02514B684004E5AFF /* DetailScrollView.swift */; };
+		33D7B7F9251CF7CF00ADFAB4 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D7B7F8251CF7CF00ADFAB4 /* User.storyboard */; };
+		33D7B7FB251CFE5900ADFAB4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7B7FA251CFE5900ADFAB4 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		33D599CC2514AACF004E5AFF /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
 		33D599CE2514ADA4004E5AFF /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		33D599D02514B684004E5AFF /* DetailScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
+		33D7B7F8251CF7CF00ADFAB4 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		33D7B7FA251CFE5900ADFAB4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		33D1ED64251B9B40009F3BCE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				33D7B7FA251CFE5900ADFAB4 /* UIViewController+Extension.swift */,
 				33D1ED6B251C247C009F3BCE /* UIView+Extension.swift */,
 				33D1ED65251B9B59009F3BCE /* String+Extension.swift */,
 			);
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				33D599C025149D64004E5AFF /* UserTableViewController.swift */,
+				33D7B7F8251CF7CF00ADFAB4 /* User.storyboard */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D599AC251499B7004E5AFF /* LaunchScreen.storyboard in Resources */,
+				33D7B7F9251CF7CF00ADFAB4 /* User.storyboard in Resources */,
 				33D599A9251499B7004E5AFF /* Assets.xcassets in Resources */,
 				33D599A7251499B4004E5AFF /* Main.storyboard in Resources */,
 			);
@@ -261,6 +268,7 @@
 				33D599BF25149D58004E5AFF /* SearchTableViewController.swift in Sources */,
 				33D1ED6C251C247C009F3BCE /* UIView+Extension.swift in Sources */,
 				33D599D12514B684004E5AFF /* DetailScrollView.swift in Sources */,
+				33D7B7FB251CFE5900ADFAB4 /* UIViewController+Extension.swift in Sources */,
 				33D1ED68251BA1F2009F3BCE /* TodayAnimationTransition.swift in Sources */,
 				33D599CF2514ADA4004E5AFF /* CardDetailViewController.swift in Sources */,
 				33D599BB25149D40004E5AFF /* TodayTableViewController.swift in Sources */,
