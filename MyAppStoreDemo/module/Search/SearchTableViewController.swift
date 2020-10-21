@@ -8,39 +8,55 @@
 
 import UIKit
 
+let cellReuseIdentifier = "search"
+
 class SearchTableViewController: UITableViewController {
+
+    private var searchController: UISearchController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSearchController()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.tableView.register(SearchTableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+    }
+    
+    func setupSearchController(){
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.autocapitalizationType = .none
+        searchController.searchBar.placeholder = "Apple Store"
+        searchController.isActive = true
+//        definesPresentationContext = true
+        
+        if #available(iOS 11.0, *) {
+            navigationItem.searchController = searchController
+            
+            navigationItem.hidesSearchBarWhenScrolling = true
+        } else {
+            tableView.tableHeaderView = searchController.searchBar
+        }
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return dataList.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! SearchTableViewCell
+        cell.textLabel?.text = dataList[indexPath.row];
+
+        cell.canChangeHightlighted = (indexPath.row != 0)
 
         // Configure the cell...
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -88,3 +104,16 @@ class SearchTableViewController: UITableViewController {
     */
 
 }
+
+fileprivate let dataList: [String] = [
+    "Hot Search",
+    "Daily life",
+    "League of Legends",
+    "Wechat",
+    "Game of Thrones",
+    "Hupu JRS",
+    "Game Center",
+    "QQ Music"
+]
+
+

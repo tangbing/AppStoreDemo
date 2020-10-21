@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330E53DF253FD37F004EA5C0 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E53DE253FD37F004EA5C0 /* SearchTableViewCell.swift */; };
 		33D1ED66251B9B59009F3BCE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1ED65251B9B59009F3BCE /* String+Extension.swift */; };
 		33D1ED68251BA1F2009F3BCE /* TodayAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1ED67251BA1F2009F3BCE /* TodayAnimationTransition.swift */; };
 		33D1ED6A251C240D009F3BCE /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1ED69251C240D009F3BCE /* CardPresentationController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330E53DE253FD37F004EA5C0 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		33D1ED65251B9B59009F3BCE /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		33D1ED67251BA1F2009F3BCE /* TodayAnimationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayAnimationTransition.swift; sourceTree = "<group>"; };
 		33D1ED69251C240D009F3BCE /* CardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330E53DD253FD35F004EA5C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				330E53DE253FD37F004EA5C0 /* SearchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		33D1ED64251B9B40009F3BCE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 		33D599B825149A4B004E5AFF /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				330E53DD253FD35F004EA5C0 /* View */,
 				33D599BE25149D58004E5AFF /* SearchTableViewController.swift */,
 			);
 			path = Search;
@@ -273,6 +284,7 @@
 				33D599CF2514ADA4004E5AFF /* CardDetailViewController.swift in Sources */,
 				33D599BB25149D40004E5AFF /* TodayTableViewController.swift in Sources */,
 				33D599C72514A690004E5AFF /* TodayTableHeaderView.swift in Sources */,
+				330E53DF253FD37F004EA5C0 /* SearchTableViewCell.swift in Sources */,
 				33D1ED66251B9B59009F3BCE /* String+Extension.swift in Sources */,
 				33D599A0251499B4004E5AFF /* AppDelegate.swift in Sources */,
 				33D599C125149D64004E5AFF /* UserTableViewController.swift in Sources */,
