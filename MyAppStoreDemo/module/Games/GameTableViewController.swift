@@ -62,6 +62,14 @@ class GameTableViewController: UITableViewController {
             return cell
         } else if(indexPath.section == 1) {
             let cell = tableView.dequeueReusableCell(withIdentifier: GameTopicTableViewCellID, for: indexPath) as! GameTopicTableViewCell
+            cell.downloadClosure = { model in
+                
+                print("click" + model.name)
+            }
+            
+            cell.detailClosure = {
+                print("detailClosure....")
+            }
                 return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: GameLinkTableViewCellID, for: indexPath) as! GameLinkTableViewCell

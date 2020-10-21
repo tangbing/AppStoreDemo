@@ -10,7 +10,6 @@ import UIKit
 
 protocol GameTopicCollectionCellDelegage: class {
     func gameTopicCollectionCellDidClick(cell tipiccell: GameTopicCollectionViewCell)
-    
 }
 
 class GameTopicCollectionViewCell: UICollectionViewCell {
@@ -20,7 +19,7 @@ class GameTopicCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var lineView: UIView!
     
-   weak var delegage: GameTopicCollectionCellDelegage?
+    weak var delegage: GameTopicCollectionCellDelegage?
     
     var model:GameTopicModel! {
         didSet {

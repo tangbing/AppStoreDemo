@@ -12,6 +12,9 @@ let GameTopicCollectionViewCellID = "GameTopicCollectionViewCellID"
 
 class GameTopicTableViewCell: UITableViewCell {
 
+    var detailClosure: (()->())?
+    var downloadClosure: ((_ model: GameTopicModel)->())?
+    
     private lazy var headerView: CommonSectionHeaderView = {
            let frame = CGRect(x: 0, y: 0, width: kScreenW, height: 42)
            let it = CommonSectionHeaderView(frame: frame)
@@ -19,7 +22,7 @@ class GameTopicTableViewCell: UITableViewCell {
            return it
        }()
     
-    private lazy var topicCollectionView: UICollectionView = {
+     lazy var topicCollectionView: UICollectionView = {
         
         let frame = CGRect(x: 0, y: 42, width: kScreenW, height: 80 * 3)
 
@@ -68,14 +71,29 @@ extension GameTopicTableViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GameTopicCollectionViewCellID, for: indexPath) as! GameTopicCollectionViewCell
+        cell.delegage = self
         cell.model = TopicDataSource[indexPath.row]
         return cell
-        
     }
 }
 
-extension  GameTopicTableViewCell: UICollectionViewDelegate {
+extension GameTopicTableViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        detailClosure?()
+    }
+}
+
+extension GameTopicTableViewCell: GameTopicCollectionCellDelegage {
+    func gameTopicCollectionCellDidClick(cell tipiccell: GameTopicCollectionViewCell) {
+        print("gameTopicCollectionCellDidClick")
+    }
     
+//    func gameTopicCollectionCellDidClick(cell tipiccell: GameTopicCollectionViewCell) {
+//        if let indexPath = topicCollectionView.indexPath(for: tipiccell) {
+//            downloadClosure?(TopicDataSource[indexPath.item])
+//        }
+//    }
 }
 
 fileprivate let TopicDataSource: [GameTopicModel] = [
