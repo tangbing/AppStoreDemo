@@ -8,6 +8,11 @@
 
 import UIKit
 
+let GameLinkTableViewCellID = "GameLinkTableViewCellID"
+let GameTopicTableViewCellID = "GameTopicTableViewCellID"
+let GameRecommandTableViewCellID = "GameRecommandTableViewCellID"
+
+
 class GameTableViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -15,6 +20,12 @@ class GameTableViewController: UITableViewController {
         adjustNavigationForiOS13()
         setNavigationBarBottomLineHidden(true)
         addIconButtonOnNavigationBar()
+        
+        tableView.register(GameLinkTableViewCell.self, forCellReuseIdentifier: GameLinkTableViewCellID)
+        tableView.register(GameTopicTableViewCell.self, forCellReuseIdentifier: GameTopicTableViewCellID)
+        tableView.register(GameRecommandTableViewCell.self, forCellReuseIdentifier: GameRecommandTableViewCellID)
+
+
       }
 
     
@@ -42,6 +53,20 @@ class GameTableViewController: UITableViewController {
             return 1
         }
         return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.section == 0  {
+           let cell = tableView.dequeueReusableCell(withIdentifier: GameRecommandTableViewCellID, for: indexPath) as! GameRecommandTableViewCell
+            return cell
+        } else if(indexPath.section == 1) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: GameTopicTableViewCellID, for: indexPath) as! GameTopicTableViewCell
+                return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: GameLinkTableViewCellID, for: indexPath) as! GameLinkTableViewCell
+                return cell
+        }
     }
 
 }
