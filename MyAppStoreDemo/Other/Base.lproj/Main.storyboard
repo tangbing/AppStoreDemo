@@ -59,7 +59,7 @@
         <!--Games-->
         <scene sceneID="iFh-BU-a15">
             <objects>
-                <navigationController id="zKD-tT-8S5" sceneMemberID="viewController">
+                <navigationController hidesBottomBarWhenPushed="YES" id="zKD-tT-8S5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Games" image="tabbar_games" id="wPV-4r-8Vr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="PqU-Xc-gJJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>

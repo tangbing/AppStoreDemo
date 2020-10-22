@@ -28,6 +28,11 @@ class GameTableViewController: UITableViewController {
 
       }
 
+    private func pushToDetailController() {
+           hidesBottomBarWhenPushed = true
+           navigationController?.pushViewController(DetailViewController(), animated: true)
+       }
+
     
    
     // MARK: - Table view data source
@@ -63,12 +68,14 @@ class GameTableViewController: UITableViewController {
         } else if(indexPath.section == 1) {
             let cell = tableView.dequeueReusableCell(withIdentifier: GameTopicTableViewCellID, for: indexPath) as! GameTopicTableViewCell
             cell.downloadClosure = { model in
-                
-                print("click" + model.name)
+                let vc = DownloadViewController()
+                vc.model = model
+                self.present(vc, animated: true, completion: nil)
+
             }
             
             cell.detailClosure = {
-                print("detailClosure....")
+                self.pushToDetailController()
             }
                 return cell
         } else {

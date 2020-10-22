@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330141652541241800AD2CD7 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330141642541241800AD2CD7 /* DownloadViewController.swift */; };
+		330141682541250B00AD2CD7 /* DownloadBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330141672541250B00AD2CD7 /* DownloadBottomView.swift */; };
+		3301416A2541253600AD2CD7 /* DownloadBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330141692541253600AD2CD7 /* DownloadBottomView.xib */; };
+		3301416C254128E800AD2CD7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3301416B254128E800AD2CD7 /* DetailViewController.swift */; };
 		330E53DF253FD37F004EA5C0 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E53DE253FD37F004EA5C0 /* SearchTableViewCell.swift */; };
 		330E53E3253FE0C5004EA5C0 /* UpdateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E53E2253FE0C5004EA5C0 /* UpdateModel.swift */; };
 		330E53E7253FE29C004EA5C0 /* UpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E53E5253FE29C004EA5C0 /* UpdateTableViewCell.swift */; };
@@ -14,6 +18,8 @@
 		330E53ED2540438A004EA5C0 /* GameLinkTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E53EB2540438A004EA5C0 /* GameLinkTableView.swift */; };
 		330E53F22540444E004EA5C0 /* CommonSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E53F12540444E004EA5C0 /* CommonSectionHeaderView.swift */; };
 		330E53F42540452F004EA5C0 /* GameLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330E53F32540452F004EA5C0 /* GameLinkTableViewCell.swift */; };
+		3386B48325415F8100D2E398 /* DownloadPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3386B48225415F8100D2E398 /* DownloadPresentationController.swift */; };
+		3386B48525415FA600D2E398 /* DownloadTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3386B48425415FA600D2E398 /* DownloadTransitioning.swift */; };
 		33AF81B325404BCD00F5D826 /* GameTopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF81B225404BCD00F5D826 /* GameTopicTableViewCell.swift */; };
 		33AF81BA25404F6400F5D826 /* GameTopicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF81B825404F6400F5D826 /* GameTopicCollectionViewCell.swift */; };
 		33AF81BB25404F6400F5D826 /* GameTopicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33AF81B925404F6400F5D826 /* GameTopicCollectionViewCell.xib */; };
@@ -46,6 +52,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330141642541241800AD2CD7 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		330141672541250B00AD2CD7 /* DownloadBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadBottomView.swift; sourceTree = "<group>"; };
+		330141692541253600AD2CD7 /* DownloadBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadBottomView.xib; sourceTree = "<group>"; };
+		3301416B254128E800AD2CD7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		330E53DE253FD37F004EA5C0 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		330E53E2253FE0C5004EA5C0 /* UpdateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateModel.swift; sourceTree = "<group>"; };
 		330E53E5253FE29C004EA5C0 /* UpdateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTableViewCell.swift; sourceTree = "<group>"; };
@@ -53,6 +63,8 @@
 		330E53EB2540438A004EA5C0 /* GameLinkTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLinkTableView.swift; sourceTree = "<group>"; };
 		330E53F12540444E004EA5C0 /* CommonSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSectionHeaderView.swift; sourceTree = "<group>"; };
 		330E53F32540452F004EA5C0 /* GameLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLinkTableViewCell.swift; sourceTree = "<group>"; };
+		3386B48225415F8100D2E398 /* DownloadPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadPresentationController.swift; sourceTree = "<group>"; };
+		3386B48425415FA600D2E398 /* DownloadTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTransitioning.swift; sourceTree = "<group>"; };
 		33AF81B225404BCD00F5D826 /* GameTopicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTopicTableViewCell.swift; sourceTree = "<group>"; };
 		33AF81B825404F6400F5D826 /* GameTopicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTopicCollectionViewCell.swift; sourceTree = "<group>"; };
 		33AF81B925404F6400F5D826 /* GameTopicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTopicCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -97,6 +109,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33014163254123D600AD2CD7 /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				33D599C325149E1B004E5AFF /* GameTableViewController.swift */,
+				330141642541241800AD2CD7 /* DownloadViewController.swift */,
+				3301416B254128E800AD2CD7 /* DetailViewController.swift */,
+				3386B48225415F8100D2E398 /* DownloadPresentationController.swift */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		33014166254124CC00AD2CD7 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				330141692541253600AD2CD7 /* DownloadBottomView.xib */,
+				330141672541250B00AD2CD7 /* DownloadBottomView.swift */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
 		330E53DD253FD35F004EA5C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +157,7 @@
 		330E53EA2540435D004EA5C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				33014166254124CC00AD2CD7 /* Download */,
 				33AF81BE254054DE00F5D826 /* Recommand */,
 				33AF81B125404BB500F5D826 /* Topic */,
 				330E53EF25404393004EA5C0 /* Link */,
@@ -163,6 +196,7 @@
 			children = (
 				33AF81BC2540512A00F5D826 /* GameTopicModel.swift */,
 				33AF81C5254056AC00F5D826 /* GameRecommandModel.swift */,
+				3386B48425415FA600D2E398 /* DownloadTransitioning.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,9 +334,9 @@
 		33D599C225149E08004E5AFF /* Games */ = {
 			isa = PBXGroup;
 			children = (
+				33014163254123D600AD2CD7 /* VIewController */,
 				33AF81B425404ED800F5D826 /* Model */,
 				330E53EA2540435D004EA5C0 /* View */,
-				33D599C325149E1B004E5AFF /* GameTableViewController.swift */,
 			);
 			path = Games;
 			sourceTree = "<group>";
@@ -382,6 +416,7 @@
 				33D7B7F9251CF7CF00ADFAB4 /* User.storyboard in Resources */,
 				33D599A9251499B7004E5AFF /* Assets.xcassets in Resources */,
 				33D599A7251499B4004E5AFF /* Main.storyboard in Resources */,
+				3301416A2541253600AD2CD7 /* DownloadBottomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,11 +428,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				330E53ED2540438A004EA5C0 /* GameLinkTableView.swift in Sources */,
+				330141682541250B00AD2CD7 /* DownloadBottomView.swift in Sources */,
 				330E53F42540452F004EA5C0 /* GameLinkTableViewCell.swift in Sources */,
 				33D599C425149E1B004E5AFF /* GameTableViewController.swift in Sources */,
 				33D599BF25149D58004E5AFF /* SearchTableViewController.swift in Sources */,
 				33AF81C0254054FC00F5D826 /* GameRecommandTableViewCell.swift in Sources */,
 				33D1ED6C251C247C009F3BCE /* UIView+Extension.swift in Sources */,
+				3301416C254128E800AD2CD7 /* DetailViewController.swift in Sources */,
 				33D599D12514B684004E5AFF /* DetailScrollView.swift in Sources */,
 				33D7B7FB251CFE5900ADFAB4 /* UIViewController+Extension.swift in Sources */,
 				33D1ED68251BA1F2009F3BCE /* TodayAnimationTransition.swift in Sources */,
@@ -407,8 +444,10 @@
 				33D599CF2514ADA4004E5AFF /* CardDetailViewController.swift in Sources */,
 				33D599BB25149D40004E5AFF /* TodayTableViewController.swift in Sources */,
 				33D599C72514A690004E5AFF /* TodayTableHeaderView.swift in Sources */,
+				3386B48525415FA600D2E398 /* DownloadTransitioning.swift in Sources */,
 				330E53DF253FD37F004EA5C0 /* SearchTableViewCell.swift in Sources */,
 				330E53F22540444E004EA5C0 /* CommonSectionHeaderView.swift in Sources */,
+				3386B48325415F8100D2E398 /* DownloadPresentationController.swift in Sources */,
 				33D1ED66251B9B59009F3BCE /* String+Extension.swift in Sources */,
 				33D599A0251499B4004E5AFF /* AppDelegate.swift in Sources */,
 				33D599C125149D64004E5AFF /* UserTableViewController.swift in Sources */,
@@ -420,6 +459,7 @@
 				33D1ED6A251C240D009F3BCE /* CardPresentationController.swift in Sources */,
 				330E53E3253FE0C5004EA5C0 /* UpdateModel.swift in Sources */,
 				33D599CB2514A923004E5AFF /* GlobalFunctions.swift in Sources */,
+				330141652541241800AD2CD7 /* DownloadViewController.swift in Sources */,
 				33D599CD2514AACF004E5AFF /* TodayTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

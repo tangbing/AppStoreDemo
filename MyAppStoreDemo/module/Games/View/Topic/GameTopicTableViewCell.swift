@@ -86,14 +86,11 @@ extension GameTopicTableViewCell: UICollectionViewDelegate {
 
 extension GameTopicTableViewCell: GameTopicCollectionCellDelegage {
     func gameTopicCollectionCellDidClick(cell tipiccell: GameTopicCollectionViewCell) {
-        print("gameTopicCollectionCellDidClick")
+        if let indexPath = topicCollectionView.indexPath(for: tipiccell) {
+            downloadClosure?(TopicDataSource[indexPath.item])
+            
+        }
     }
-    
-//    func gameTopicCollectionCellDidClick(cell tipiccell: GameTopicCollectionViewCell) {
-//        if let indexPath = topicCollectionView.indexPath(for: tipiccell) {
-//            downloadClosure?(TopicDataSource[indexPath.item])
-//        }
-//    }
 }
 
 fileprivate let TopicDataSource: [GameTopicModel] = [
